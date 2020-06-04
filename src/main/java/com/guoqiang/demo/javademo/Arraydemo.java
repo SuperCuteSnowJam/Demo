@@ -1,11 +1,11 @@
 package com.guoqiang.demo.javademo;
 
+import java.util.ArrayList;
+
 public class Arraydemo {
 
     public static void main(String []args){
-        demo_one();
-        demo_two();
-        demo_three();
+        System.out.println(new ArrayList<String>(){{add("sdjflksd");}}.stream().count());
     }
     //动态初始化
     public static void demo_one(){
