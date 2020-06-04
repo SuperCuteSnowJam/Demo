@@ -13,7 +13,7 @@ public class SparkDemo {
                 .appName("Simple Application For JsonApi")
                 .enableHiveSupport()
                 .getOrCreate();
-        spark.sql("select * from gnpd_dwh.map_master_item_image limit 50");
+        spark.sql("select * from gnpd_dwh.map_master_item_image limit 50").show();
         spark.close();
     }
 }
